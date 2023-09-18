@@ -2,9 +2,9 @@
 
 using namespace std;
 
-void maxValue(vector<int>a)
+void maxValue(int a[], int n)
 {
-    long long int n=a.size();
+    //long long int n=a.size();
     long long int i,j,presum[n],l[n],r[n];
 
     presum[0]=a[0];
@@ -64,7 +64,7 @@ void maxValue(vector<int>a)
 
     //cout<<max_product;
 
-    return max_product;
+    cout<<max_product;
     // cout<<"\n\n";
     /*
     for(i=0;i<n;i++)
@@ -83,7 +83,7 @@ void maxValue(vector<int>a)
 
 int main()
 {
-      int n = 5;
+    int n = 5;
     int arr[] = { 4,7,2,8,3};
  
     // Function call
