@@ -1,0 +1,32 @@
+The SOLID principles are a set of five design principles in object-oriented programming that aim to promote software designs that are easy to maintain, understand, and extend. Each principle focuses on a specific aspect of software design. Let's explore each principle along with an example:
+
+1. Single Responsibility Principle (SRP):
+The SRP states that a class should have only one reason to change, meaning it should have a single responsibility. In other words, a class should have only one primary purpose or job. By adhering to SRP, you ensure that each class has a clear and well-defined role.
+
+Example:
+Consider a class called `EmailSender` responsible for sending emails. The class should handle only the functionality related to sending emails and not take on other unrelated responsibilities, such as formatting the email content or managing email contacts. Those responsibilities should be assigned to separate classes, like `EmailFormatter` and `ContactManager`, respectively.
+
+2. Open-Closed Principle (OCP):
+The OCP states that software entities (classes, modules, functions) should be open for extension but closed for modification. In other words, you should be able to extend the behavior of a module without modifying its source code. This principle promotes the use of abstractions and interfaces to allow for easy and non-intrusive extension.
+
+Example:
+Consider a class called `Shape` with a method `calculateArea()`. Instead of modifying the `Shape` class every time a new shape is added, adhere to the OCP by introducing an abstract base class called `Shape` and deriving specific shapes (e.g., `Rectangle`, `Circle`) from it. Each specific shape can override the `calculateArea()` method to provide its own implementation without modifying the base `Shape` class.
+
+3. Liskov Substitution Principle (LSP):
+The LSP states that objects of a superclass should be replaceable with objects of its subclasses without affecting the correctness of the program. In other words, derived classes should be substitutable for their base classes without introducing any unexpected behavior or violating any invariants.
+
+Example:
+Consider a class hierarchy representing shapes. The `Rectangle` class inherits from the `Shape` class. According to LSP, any code that works with a `Shape` object should also work seamlessly with a `Rectangle` object without requiring any special handling or causing unexpected results.
+
+4. Interface Segregation Principle (ISP):
+The ISP states that clients should not be forced to depend on interfaces they do not use. It encourages the creation of specific interfaces for different clients instead of having large, monolithic interfaces that contain methods irrelevant to certain clients.
+
+Example:
+Suppose you have an interface called `Printer` with methods like `print()`, `scan()`, and `fax()`. However, not all clients that use the `Printer` interface require all these methods. Instead of a single large interface, adhere to the ISP by creating smaller, specialized interfaces such as `Printable`, `Scannable`, and `Faxable`. Clients can then implement only the interfaces they need, avoiding unnecessary dependencies.
+
+5. Dependency Inversion Principle (DIP):
+The DIP states that high-level modules should not depend on low-level modules. Both should depend on abstractions. It promotes loose coupling between modules and encourages the use of abstractions (interfaces or abstract classes) to define dependencies, allowing for flexibility and easy substitution of implementations.
+
+Example:
+Consider a high-level module called `PaymentService` that requires a low-level module for payment processing. Instead of directly depending on a specific implementation of the payment processor, adhere to DIP by defining an abstract `PaymentProcessor` interface. The `PaymentService` can then depend on the interface, and different payment processors (e.g., PayPal, Stripe) can implement the interface, allowing for easy swapping between implementations.
+
