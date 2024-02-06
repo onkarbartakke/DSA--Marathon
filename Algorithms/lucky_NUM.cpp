@@ -7,7 +7,7 @@ bool lucky_num(int n)
     static int counter=2;
     if(counter>n)
     return true;
-    else if(counter%2==0)
+    else if(n%counter == 0)
     return false;
 
     int np=n;
