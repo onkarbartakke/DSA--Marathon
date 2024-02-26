@@ -4,3 +4,7 @@ https://www.linkedin.com/posts/pratham-kohli_topleetcodeposts-that-you-cannot-mi
 https://www.linkedin.com/posts/abhishek-r-95902120a_programming-amazon-interviewexperience-activity-7068276085754408960-In-6?utm_source=share&utm_medium=member_desktop
 
 https://www.linkedin.com/posts/himanshushekhar16_microsoft-ugcPost-7063836393348734978-BMdZ?utm_source=share&utm_medium=member_desktop
+
+//https://leetcode.com/problems/maximum-palindromes-after-operations/
+
+//https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-ii/description/

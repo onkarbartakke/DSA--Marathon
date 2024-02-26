@@ -84,7 +84,7 @@ int maxValue(vector<int>a, int N)
 int main()
 {
       int n = 5;
-    int arr[] = { 4,7,2,8,3};
+     vector<int>arr = { 4,7,2,8,3};
  
     // Function call
     maxValue(arr, n);
