@@ -25,6 +25,7 @@ Constraints
 N <= 20
 
 */
+int cost[21][21];
 
 int solve(int i, int n, int mask, vector<vector<int>> &dp)
 {
@@ -39,7 +40,7 @@ int solve(int i, int n, int mask, vector<vector<int>> &dp)
     for (int j = 0; j < n; j++)
     {
         if (mask & (1 << j))
-            ans = min(ans, cost[j][i] + solve(i + 1, n, (mask ^ (1 << j)), dp))
+            ans = min(ans, cost[j][i] + solve(i + 1, n, (mask ^ (1 << j)), dp));
     }
 
     return dp[i][mask] = ans;
@@ -51,12 +52,12 @@ int main()
     cout << "Enter the value of N : ";
     cin >> n;
 
-    int cost[n][n];
+    
     cout << "\nEnter the cost person matrix : \n";
 
     for (int i = 0; i < n; i++)
     {
-        for (j = 0; j < n; j++)
+        for (int j = 0; j < n; j++)
         {
             cin >> cost[i][j];
         }

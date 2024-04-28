@@ -42,7 +42,8 @@ int main()
         adjlst[y].push_back(x);
     }
 
-    int visited[v] = {0};
+    int visited[v];
+    
     vector<int> components;
 
     for (i = 0; i < v; i++)

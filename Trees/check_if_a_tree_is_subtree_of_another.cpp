@@ -5,6 +5,7 @@
 #include <map>
 #include <string>
 #include <stack>
+#define ll long long
 using namespace std;
 
 class Node

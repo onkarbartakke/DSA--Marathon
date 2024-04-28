@@ -1,15 +1,4 @@
-#include <iostream>
-#include <string.h>
-#include <vector>
-#include <climits>
-#include <unordered_map>
-#include <algorithm>
-#include <queue>
-#include <stack>
-#include <list>
-#include <map>
-#include <set>
-
+#include<bits/stdc++.h>
 using namespace std;
 
 bool detectArbitrage(vector<vector<double>> exchangeRates)

@@ -19,7 +19,7 @@ int main()
     vector< vector<int>>adjlst(v+1);
 
     cout<<"\nEnter the Edges : \n";
-    int incoming[v+1]={0};
+    int incoming[v+1];
     for(i=0;i<e;i++)
     {
         cin>>x>>y;

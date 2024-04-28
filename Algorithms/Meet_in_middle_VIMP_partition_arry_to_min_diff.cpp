@@ -20,7 +20,7 @@ public:
 
         int N = n / 2;
 
-        vector<vector<int>> left(N + 1), right(N + 1);
+        vector<vector<int> > left(N + 1), right(N + 1);
 
         for (int mask = 0; mask < (1 << N); mask++)
         {
@@ -73,3 +73,8 @@ public:
         return res;
     }
 };
+
+int main()
+{
+    cout<<"Hello World\n ";
+}

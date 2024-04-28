@@ -7,7 +7,7 @@ void DFS1(int G[][SIZE],int start, int n)
 {
     int u,v;
     stack<int>st;
-    int visited[n]={0};
+    int visited[n];
     
     u=start;
     cout<<u<<" ";
